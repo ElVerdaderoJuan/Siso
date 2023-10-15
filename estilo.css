@@ -1,11 +1,12 @@
 body {
+    background-color: #0a2630;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1c272b;
+    background-color: #0a2630;
     color: #fff;
     text-align: center;
     padding: 1vw 1vw 1vw 1vw;
@@ -19,11 +20,11 @@ header h1 {
 
 .contenido {
     padding: 1vw 3vw 1vw 3vw;
-    background-color: #1c272b;
+    background-color: #0a2630;
 }
 
 footer {
-    background-color: #1c272b;
+    background-color: #0a2630;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -36,10 +37,16 @@ footer {
     align-items: center;
     height: 12vh;
     width: 95vw;
-    padding: 0 0.9vw 0 0.9vw;
+    padding: 0 1vw;
     border-radius: 29px;
     font-size: 200%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.3vw;
+    z-index: 100;
+    margin: 1%;
 }
+
 
 .BarraNavegacion p {
     color: #ffebe9;
@@ -55,10 +62,11 @@ footer {
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .Barra-boton-seleccionado {
-    background-color: #e96862;
+    background-color: #3c92d8;
     color: #FFBBB8;
     border: none;
     padding: 2.3vh 20px;
@@ -66,6 +74,10 @@ footer {
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: #e96862;
 }
 
 
@@ -76,20 +88,22 @@ footer {
 
 section {
     padding: 0;
+    
 }
 
 section h2 {
     font-size: 6vh;
+    color: #a0def5;
 }
 
-section h2, p {
-    color: #CFF0FF;
+section p {
+    color: #719dad;
 }
 
 .Seccion {
     display: flex;
     border-radius: 29px;
-    background-color: #32454D;
+    background-color: #143642;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -97,4 +111,14 @@ section h2, p {
 
 .Contenido-Seccion {
     margin: 2% 6% 6% 6% ;
+    width: 100%;
+}
+
+.Titulo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    height: 25vh;
+    
 }
