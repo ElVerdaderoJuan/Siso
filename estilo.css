@@ -1,55 +1,63 @@
 body {
-    background-color: #0a2630;
+    background-color: #071929;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #0a2630;
     color: #fff;
     text-align: center;
     padding: 1vw 1vw 1vw 1vw;
 }
 
 header h1 {
-    margin: 9vh;
+    margin: 16vh 0 0 0;
     font-size: 21vh;
+    text-shadow: 0 0 20px rgb(158, 211, 255, 0.3);
+}
+
+header p {
+    color: #7092af;
+    margin: 0 0 16vh 0;
+    font-size: 160%;
+    position: relative;
+    top: -16px;
 }
 
 
 .contenido {
     padding: 1vw 3vw 1vw 3vw;
-    background-color: #0a2630;
 }
 
 footer {
-    background-color: #0a2630;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
 .BarraNavegacion {
-    background-color: #0C3E66;
+    background-color: #0e283f;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    height: 12vh;
-    width: 95vw;
-    padding: 0 1vw;
+    padding: 1vw 1vw;
     border-radius: 29px;
+    border-color: #e96862;
+    border: 6px solid #071929;
     font-size: 200%;
     position: -webkit-sticky;
     position: sticky;
-    top: 0.3vw;
+    top: 0;
     z-index: 100;
-    margin: 1%;
+    margin: 1%;    
 }
 
 
 .BarraNavegacion p {
     color: #ffebe9;
+    padding: 50%;
 }
 
 .Barra-boton {
@@ -62,7 +70,13 @@ footer {
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.5s;
+    white-space: nowrap;
+}
+
+.Menu-boton {
+    text-decoration: none;
+    color: #CFE9FF;
 }
 
 .Barra-boton-seleccionado {
@@ -74,13 +88,13 @@ footer {
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgb(158, 211, 255, 0.2);
 }
 
 .boton:hover {
     background-color: #e96862;
+    box-shadow: 0 0 20px rgb(158, 211, 255, 0.3);
 }
-
-
 
 .Barra-boton:not(:last-child) {
     margin-right: 0.6vw; /* Margen entre los botones */
@@ -103,7 +117,7 @@ section p {
 .Seccion {
     display: flex;
     border-radius: 29px;
-    background-color: #143642;
+    background-color: #0e283f;
     width: 100%;
     height: 100%;
     color: #fff;
