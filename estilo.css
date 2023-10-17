@@ -25,6 +25,10 @@ header p {
     top: -16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .contenido {
     padding: 1vw 3vw 1vw 3vw;
@@ -42,16 +46,16 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 1vw 1vw;
+    padding: 0.5vh 1vh;
     border-radius: 29px;
     border-color: #e96862;
-    border: 6px solid #071929;
-    font-size: 200%;
+    border: 9px solid #071929;
+    font-size: 150%;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
-    margin: 1%;    
+    margin: 1% 1% 0 1%;    
 }
 
 
@@ -65,13 +69,16 @@ footer {
     text-decoration: none;
     color: #CFE9FF;
     border: none;
-    padding: 2.3vh 20px;
+    padding: 2.3vh 2.3vh;
     cursor: pointer;
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
     transition: background-color 0.3s, box-shadow 0.5s;
     white-space: nowrap;
+    margin-bottom: 0.9vh;
+    margin-top: 0.9vh;
+    margin-left: 0.6vh;
 }
 
 .Menu-boton {
@@ -97,21 +104,8 @@ footer {
 }
 
 .Barra-boton:not(:last-child) {
-    margin-right: 0.6vw; /* Margen entre los botones */
-}
-
-section {
-    padding: 0;
+    margin-right: 0.9vh; /* Margen entre los botones */
     
-}
-
-section h2 {
-    font-size: 6vh;
-    color: #a0def5;
-}
-
-section p {
-    color: #719dad;
 }
 
 .Seccion {
@@ -123,16 +117,73 @@ section p {
     color: #fff;
 }
 
-.Contenido-Seccion {
-    margin: 2% 6% 6% 6% ;
-    width: 100%;
+.Menu {
+    margin-left: 2vh;
+    margin-right: 1vh;
+    flex: 1;
 }
 
+
+
+
+
+
+.Seccion-Principal {
+    margin: 0 1vh;
+    flex: 2;
+}
+
+.Seccion-Principal a {
+    font-weight: bold;
+    color: #f3807a;
+    transition: all 0.2s;
+}
+
+.Seccion-Principal span {
+    font-weight: bold;
+    color: #95bee2;
+}
+
+.Seccion-Principal p {
+    padding: 0;
+    color: #6390b8;
+}
+
+.Seccion a:hover {
+    color: #ff645c;
+}
+
+
+
+
+
+
+.Adicion {
+    margin-right: 2vh;
+    margin-left: 1vh;
+    flex: 1;
+}
+
+.Fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15vh;
+}
+
+
 .Titulo {
+    margin-top: 3vh;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
+    text-align: center;
     width: 100%;
-    height: 25vh;
-    
+    height: 10vh;
+    color: #a0c5e5;
+    text-shadow: 0 0 20px rgb(158, 211, 255, 0.2);
+}
+
+.Contenido {
+    display: flex;
+    padding: 0 5vh;
 }
