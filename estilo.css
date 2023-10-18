@@ -81,11 +81,6 @@ footer {
     margin-left: 0.6vh;
 }
 
-.Menu-boton {
-    text-decoration: none;
-    color: #CFE9FF;
-}
-
 .Barra-boton-seleccionado {
     background-color: #3c92d8;
     color: #FFBBB8;
@@ -117,10 +112,36 @@ footer {
     color: #fff;
 }
 
+
+
+
+
+
 .Menu {
     margin-left: 2vh;
     margin-right: 1vh;
     flex: 1;
+}
+
+.Menu-Botones {
+    list-style: none;
+    width: 100%;
+    padding: 1% 9%;
+}
+
+.Menu-Botones a {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding-right: 3%;
+    cursor: pointer;
+    padding: 6%;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.Menu-Botones a:hover {
+    background-color: #1a3a57;
 }
 
 
@@ -136,7 +157,7 @@ footer {
 .Seccion-Principal a {
     font-weight: bold;
     color: #f3807a;
-    transition: all 0.2s;
+    transition: color 0.2s;
 }
 
 .Seccion-Principal span {
@@ -149,7 +170,7 @@ footer {
     color: #6390b8;
 }
 
-.Seccion a:hover {
+.Seccion-Principal a:hover {
     color: #ff4860;
 }
 
