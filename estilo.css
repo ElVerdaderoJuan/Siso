@@ -150,7 +150,7 @@ footer {
 }
 
 .Seccion a:hover {
-    color: #ff645c;
+    color: #ff4860;
 }
 
 
@@ -167,7 +167,7 @@ footer {
 .Fixed {
     position: -webkit-sticky;
     position: sticky;
-    top: 15vh;
+    top: 15%;
 }
 
 
@@ -187,3 +187,4 @@ footer {
     display: flex;
     padding: 0 5vh;
 }
+
