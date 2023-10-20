@@ -5,6 +5,32 @@ body {
     padding: 0;
 }
 
+
+
+
+
+
+::selection {
+    background-color: #ff7d77;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    background-color: #030e1f;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 29px;
+    background-color: #204769; /* Cambia el color del pulgar del scrollbar */
+}
+
+
+
+
+
+
 header {
     color: #fff;
     text-align: center;
@@ -123,25 +149,44 @@ footer {
     flex: 1;
 }
 
+.Scroll-Animation {
+    transition: 2s; /* Duración de la transición de 1 segundo */
+}
+
+
+
+
+
+
 .Menu-Botones {
     list-style: none;
     width: 100%;
     padding: 1% 9%;
+    color: #cbe7ff;
 }
 
 .Menu-Botones a {
     display: flex;
-    color: #fff;
+    color: #95bee2;
     justify-content: space-between;
     padding-right: 3%;
     cursor: pointer;
     padding: 6%;
     border-radius: 10px;
-    transition: background-color 0.2s;
+    transition: background-color 0.12s;
 }
 
 .Menu-Botones a:hover {
     background-color: #1a3a57;
+}
+
+.Menu-Botones div {
+    
+    font-weight: bold;
+    font-size: 134%;
+    text-align: center;
+    padding: 3%;
+    margin: 0;
 }
 
 
