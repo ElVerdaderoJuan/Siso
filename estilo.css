@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 
 
@@ -25,7 +30,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-    background-color: #030e1f;
+    background-color: #0a2236;
     border-radius: 29px;
     width: 10px;
     height: 10px;
@@ -127,7 +132,7 @@ footer {
     color: #FFBBB8;
     border: none;
     padding: 2.3vh 20px;
-    cursor: pointer;
+    cursor: default;
     flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
     text-align: center;
     border-radius: 20px;
@@ -200,6 +205,31 @@ footer {
     margin: 0;
 }
 
+#Menu-Botones-Desactivado {
+    font-weight: normal;
+    font-size: 100%;
+    display: flex;
+    color: #95bee2;
+    justify-content: space-between;
+    cursor: default;
+    padding-right: 3%;
+    padding: 6%;
+    border-radius: 10px;
+}
+
+#Menu-Botones-Desactivado {
+    opacity: 0.4;
+}
+
+#Menu-Botones-Desactivado span {
+    opacity: 0;
+    transition: opacity 0.36s;
+}
+
+#Menu-Botones-Desactivado:hover span {
+    opacity: 1;
+}
+
 
 
 
@@ -255,12 +285,28 @@ footer {
     width: 100%;
 }
 
+.AutoScroll div {
+    cursor: default;
+}
+
 
 
 
 
 
 .Titulo {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    color: #a0c5e5;
+    text-shadow: 0 0 20px rgb(158, 211, 255, 0.2);
+}
+
+.Titulo2 {
     margin-top: 3vh;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -279,4 +325,37 @@ footer {
 .Contenido {
     display: flex;
     padding: 0 5vh;
+}
+
+
+
+
+
+
+.Cortes-Contenido {
+    display: flex;
+    justify-content: center;
+    padding: 0 3% 0 3%;
+}
+
+.Cortes-Contenido a {
+    flex: 1;
+}
+
+.Cortes {
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+}
+
+.Cortes h2 {
+    color: #a0c5e5;
+    font-size: 200%;
+    text-shadow: 0 0 20px rgb(158, 211, 255, 0.2);
+    margin: 3vw 3vw 3vw 3vw;
+}
+
+.Corte {
+    color: #cbe7ff;
+    height: 100%;
 }
