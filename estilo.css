@@ -117,7 +117,7 @@ footer {
     border: none;
     padding: 2.3vh 2.3vh;
     cursor: pointer;
-    flex: 1; /* Cada botón ocupa el mismo espacio (25% del ancho) */
+    flex: 1;
     text-align: center;
     border-radius: 20px;
     transition: background-color 0.3s, box-shadow 0.5s;
@@ -334,28 +334,80 @@ footer {
 
 .Cortes-Contenido {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0 3% 0 3%;
 }
 
 .Cortes-Contenido a {
     flex: 1;
+    max-width: 24%;
+    min-width: 240px;
+    margin: 1%;
+    transition: background-color 0.3s, box-shadow 0.5s;
 }
 
 .Cortes {
     width: 100%;
     text-align: center;
-    height: 60vh;
 }
 
 .Cortes h2 {
     color: #a0c5e5;
-    font-size: 200%;
+    font-size: 300%;
+    cursor: default;
     text-shadow: 0 0 20px rgb(158, 211, 255, 0.2);
     margin: 3vw 3vw 3vw 3vw;
 }
 
 .Corte {
     color: #cbe7ff;
+    padding: 0 9% 3% 9%;
     height: 100%;
+}
+
+.Corte h2 {
+    font-size: 300%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.Corte h3 {
+    font-size: 150%;
+    margin-bottom: 9%;
+}
+
+.Corte li {
+    color: #fff;
+    opacity: 0.36;
+    text-align: left;
+    margin: 1%;
+}
+
+.NoDisponible {
+    background-color: #093c66;
+}
+
+.NoDisponible, .NoDisponible h2, .NoDisponible h3 {
+    cursor: default;
+}
+
+.NoDisponible h2, .NoDisponible h3 {
+    opacity: 0.3;
+}
+
+.NoDisponible li {
+    text-align: center;
+    font-size: 150%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.NoDisponible:hover {
+    background-color: #093c66;
+    box-shadow: none;
+}
+
+.NoDisponible:hover li {
+    opacity: 0.45;
 }
