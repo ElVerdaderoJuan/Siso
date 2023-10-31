@@ -17,9 +17,9 @@
 
     <div class="BarraNavegacion">
         <a class="Barra-boton Barra-boton-seleccionado">Inicio</a>
-        <a href="#" class="Barra-boton boton">Clases</a>
-        <a href="#" class="Barra-boton boton">Lo último</a>
-        <a href="#" class="Barra-boton boton">Acerca de</a>
+        <a href="#Seccion-Clases" class="Barra-boton boton">Clases</a>
+        <a href="#" class="Barra-boton boton">Último tema</a>
+        <a href="#Seccion-Acerca" class="Barra-boton boton">Acerca de</a>
     </div>
 
     <div class="Contenido">
@@ -40,9 +40,9 @@
                 <div>
                     <div class="Titulo"><h2 id="Bienvenido">Bienvenido a Sistemas Operativos</h2></div>
                     <p>En esta página se mostrará todo lo relacionado con la clase de Sistemas Operativos de la univeridad <span>UTS</span>. ¡No pierdas la oportunidad de aprender algo nuevo!.</p>
-                    <p>Puedes ver los temas de cada clase dando click en el botón <a href="#">Clases</a> o seleccionando una de las opciones del menú de ayuda.</p>
-                    <p>Si quieres ver la última clase has click en el botón de <a href="#">Lo último</a> o selecciona la primera opción en el apartado de <span>Aprender</span> en el menú de ayuda.</p>
-                    <p>¿Quieres saber más acerca de la página?, conoce la información dando click en el botón <a href="#">Acerca de</a> y explora sobre este proyecto.</p>
+                    <p>Puedes ver los temas de cada clase dando click en el botón <a href="#Seccion-Clases">Clases</a> o seleccionando una de las opciones del menú de ayuda.</p>
+                    <p>Si quieres ver lo último que se ha hecho en clase has click en el botón de <a href="#">Último tema</a> o selecciona la primera opción en el apartado de <span>Aprender</span> en el menú de ayuda.</p>
+                    <p>¿Quieres saber más acerca de la página?, conoce la información dando click en el botón <a href="#Seccion-Acerca">Acerca de</a> y explora sobre este proyecto.</p>
                     <br>
                     <div class="Titulo"><h2 id="Clases">Sobre las clases</h2></div>
                     <p>Dentro de las clases encontrarás los tres cortes del semestre de la clase de Sistemas Operativos en los cuales podrás aprender sobre los temas vistos ordenadamente.</p>
@@ -62,9 +62,9 @@
                     <p>Mi nombre es <span>Juan</span> y soy un estudiante de la universidad <span>UTS</span>, gracias a la cuál he adquirido conocimiento para mi vida. Espero que lo que aprendas aquí también te ayude a tí y que explotes el potencial que hay dentro de tí. conoce más sobre el <a href="#">Autor</a>.</p>
                     <br>
                     <div class="Titulo"><h2 id="Universidad">Sobre la universidad</h2></div>
-                    <p>Mira lo que podrías hacer en la misma universidad haciendo click en el <a href="https://www.uts.edu.co/sitio/">Sitio oficial</a> de las Unidades Tecnológicas de Santander.</p>
+                    <p>Mira lo que podrías hacer en la misma universidad haciendo click en el <a href="https://www.uts.edu.co/sitio/" target="_blank">Sitio oficial</a> de las Unidades Tecnológicas de Santander.</p>
                     <p>Encontrarás información sobre la institución y podrás ver acerca de los programas académicos disponibles.</p>
-                    <p>Para seguir o revisar las redes sociales oficiales de la universidad selecciona en el menú lateral <a href="https://www.facebook.com/UnidadesTecnologicasdeSantanderUTS">Facebook</a> o <a href="https://www.instagram.com/unidades_uts">Instagram</a>.</p>
+                    <p>Para seguir o revisar las redes sociales oficiales de la universidad selecciona en el menú lateral <a href="https://www.facebook.com/UnidadesTecnologicasdeSantanderUTS" target="_blank">Facebook</a> o <a href="https://www.instagram.com/unidades_uts" target="_blank">Instagram</a>.</p>
                     <br>
                     <div class="Titulo"><h2 id="Apoyar">Apoyar</h2></div>
                     <p>Si te gusta esta página y te gustaría apoyarla puedes ayudar a mejorarla haciendo click en <a href="https://github.com/ElVerdaderoJuan/Siso.github.io" target="_blank">GitHub</a>. En el sitio encontrarás todo el código utilizado para la página, se agradece de corazón a cualquier aporte que puedas ofrecer.</p>
@@ -103,11 +103,11 @@
 
 
 
-    <div class="Contenido"> <!--Pendiente poner los cortes en esta sección-->
+    <!-- CLASES -->
+    <div class="Contenido">
         <div class="Contenido Seccion-Principal Seccion">
             <div class="Cortes">
-                <br>
-                <h2>Clases</h2>
+                <h2 id="Seccion-Clases">Clases</h2>
                 <div class="Cortes-Contenido">
                     <a href="#" class="Barra-boton boton">
                         <div class="Corte">
@@ -141,7 +141,41 @@
                         </div>
                     </a>
                 </div>
-                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="Contenido">
+        <div class="Contenido Seccion-Principal Seccion">
+            <div class="Cortes">
+                <h2 id="Seccion-Acerca">Acerca de</h2>
+                <div class="Cortes-Contenido">
+                    <a href="#" class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-page.svg" alt="Icono vector de página web">
+                            <h3>Página</h3>
+                            <p>Mira toda la información de esta página visitando esta sección</p>
+                        </div>
+                    </a>
+                    <a href="#" class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-copyright.svg" alt="Icono vector de copyright">
+                            <h3>Autor</h3>
+                            <p>Obten más detalles sobre el autor de la página</p>
+                        </div>
+                    </a>
+                    <a class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-lapiz.svg" alt="Icono vector de lapiz">
+                            <h3>Clase</h3>
+                            <p>Descubre acerca de la clase de Sistemas Operativos</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
