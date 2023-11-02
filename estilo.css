@@ -257,18 +257,30 @@ header p {
     transition: color 0.2s;
 }
 
+.Seccion-Principal a:hover {
+    color: #ff4860;
+}
+
 .Seccion-Principal span {
     font-weight: bold;
     color: #95bee2;
 }
 
-.Seccion-Principal p {
+.Seccion-Principal p, li {
     padding: 0;
     color: #6390b8;
 }
 
-.Seccion-Principal a:hover {
-    color: #ff4860;
+.Seccion-Principal li {
+    color: #83bbec;
+    list-style-type: disc;
+    margin: 0 6%;
+    margin-top: 1%;
+}
+
+.Seccion-Principal img {
+    
+    margin: 6%;
 }
 
 
