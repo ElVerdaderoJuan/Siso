@@ -17,8 +17,8 @@
 
     <div class="BarraNavegacion">
         <a class="Barra-boton Barra-boton-seleccionado">Inicio</a>
-        <a href="#Seccion-Clases" class="Barra-boton boton">Clases</a>
         <a href="#" class="Barra-boton boton">Último tema</a>
+        <a href="#Seccion-Clases" class="Barra-boton boton">Clases</a>
         <a href="#Seccion-Acerca" class="Barra-boton boton">Acerca de</a>
     </div>
 
@@ -48,8 +48,8 @@
                     <p>Dentro de las clases encontrarás los tres cortes del semestre de la clase de Sistemas Operativos en los cuales podrás aprender sobre los temas vistos ordenadamente.</p>
                     <p>Los temas que abarca esta clase son sumamente importantes si quieres trabajar en el campo de la informática y la administración de sistemas.</p>
                     <p>Verás imágenes en la página de gran ayuda que te impulsaran a aprender de forma más creativa, no te lo pierdas.</p>
-                    <p>Aprende conceptos básicos de los Sistemas Operativos en el <a href="#">Primer Corte</a>. Conoce cada aspecto básico que abarca la informática y cómo esto te puede ayudar en tus futuros proyectos.</p>
-                    <p>Conoce acerca de los procesos internos de una computadora en el <a href="#">Segundo Corte</a>. Con esto en mente comprenderás su funcionamiento y cómo administrar dichos procesos.</p>
+                    <p>Aprende conceptos básicos de los Sistemas Operativos en el <a href="Cortes/PrimerCorte.html">Primer Corte</a>. Conoce cada aspecto básico que abarca la informática y cómo esto te puede ayudar en tus futuros proyectos.</p>
+                    <p>Conoce acerca de los procesos internos de una computadora en el <a href="Cortes/SegundoCorte.html">Segundo Corte</a>. Con esto en mente comprenderás su funcionamiento y cómo administrar dichos procesos.</p>
                     <p>Próximamente estará disponible el <span>Tercer Corte</span>.</p>
                     <br>
                     <div class="Titulo"><h2 id="Pagina">Información de la página</h2></div>
@@ -76,9 +76,9 @@
         <div class="Adicion Seccion Fixed">
             <ul class="Menu-Botones AutoScroll">
                 <div>Clases</div>
-                <li><a href="PrimerCorte/PrimerCorte.html">Primer corte</a></li>
-                <li><a href="#">Segundo corte</a></li>
-                <li><div href="#" id="Menu-Botones-Desactivado">Tercer corte <span>Próximamente</span></div></li>
+                <li><a href="Cortes/PrimerCorte.html">Primer corte</a></li>
+                <li><a href="Cortes/SegundoCorte.html">Segundo corte</a></li>
+                <li><div id="Menu-Botones-Desactivado">Tercer corte <span>Próximamente</span></div></li>
                 <br>
                 <div>Acerca de</div>
                 <li><a href="#">Esta página</a></li>
@@ -109,7 +109,7 @@
             <div class="Cortes">
                 <h2 id="Seccion-Clases">Clases</h2>
                 <div class="Cortes-Contenido">
-                    <a href="#" class="Barra-boton boton">
+                    <a href="Cortes/PrimerCorte.html" class="Barra-boton boton">
                         <div class="Corte">
                             <h2>1</h2>
                             <h3>Primer corte</h3>
@@ -120,14 +120,16 @@
                             </ul>
                         </div>
                     </a>
-                    <a href="#" class="Barra-boton boton">
+                    <a href="Cortes/SegundoCorte.html" class="Barra-boton boton">
                         <div class="Corte">
                             <h2>2</h2>
                             <h3>Segundo corte</h3>
                             <ul>
-                                <li>Ciclo de vida informático</li>
-                                <li>Lenguajes de alto y bajo nivel</li>
-                                <li>Línea de tiempo</li>
+                                <li>Gestión de memoria</li>
+                                <li>Qué es un BCP</li>
+                                <li>Ejercicios de procesos</li>
+                                <li>Virtualización</li>
+                                <li>Propiedades de procesos</li>
                             </ul>
                         </div>
                     </a>
@@ -135,9 +137,7 @@
                         <div class="Corte">
                             <h2>3</h2>
                             <h3>Tercer corte</h3>
-                            <ul>
-                                <li>Próximamente</li>
-                            </ul>
+                            <p>Próximamente</p>
                         </div>
                     </a>
                 </div>
@@ -154,14 +154,14 @@
             <div class="Cortes">
                 <h2 id="Seccion-Acerca">Acerca de</h2>
                 <div class="Cortes-Contenido">
-                    <a href="#" class="Barra-boton boton">
+                    <a class="Barra-boton boton">
                         <div class="Corte">
                             <img src="Pic/Icon-page.svg" alt="Icono vector de página web">
                             <h3>Página</h3>
                             <p>Mira toda la información de esta página visitando esta sección</p>
                         </div>
                     </a>
-                    <a href="#" class="Barra-boton boton">
+                    <a class="Barra-boton boton">
                         <div class="Corte">
                             <img src="Pic/Icon-copyright.svg" alt="Icono vector de copyright">
                             <h3>Autor</h3>
@@ -183,7 +183,7 @@
     
 
     <footer>
-        <div><p>Derechos de autor &copy; 2023 Siso</p></div>
+        <div><p>Derechos de autor &copy; 2023 - El verdadero Juan</p></div>
     </footer>
 </body>
 </html>
