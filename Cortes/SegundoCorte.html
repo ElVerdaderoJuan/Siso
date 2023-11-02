@@ -27,6 +27,7 @@
             <ul class="Menu-Botones AutoScroll">
                 <div>Saltar a</div>
                 <li><a href="#GestionDeMemoria">Gestión de memoria <span>►</span></a></li>
+                <li><a href="#BCP">BCP <span>►</span></a></li>
             </ul>
             
         </div>
@@ -39,7 +40,6 @@
                     <img src="../Pic/Memory.svg" alt="Imagen del espacio donde va cada memoria">
                     <p>El administrador de memoria en el sistema operativo supervisa el uso de la memoria y asigna memoria a los procesos. El sistema de gestión de memoria organiza de manera dinámica la asignación y control de la memoria.</p>
                     <p>La memoria principal se comparte entre el sistema operativo y los procesos utilizando el concepto de multiprogramación, donde se divide en espacios para que cada proceso se ejecute de forma independiente. Se asigna un espacio fijo para el sistema operativo y el resto de la memoria se utiliza para los procesos según sea necesario.</p>
-                    <br>
                     <p>La gestión de memoria tiene varios objetivos:</p>
                     <ul>
                         <li>Dar a cada proceso su propio espacio lógico para que se ejecute de manera independiente.</li>
@@ -48,6 +48,38 @@
                         <li>Salvaguardar la memoria asignada al sistema operativo.</li>
                         <li>Habilitar el intercambio de memoria entre procesos supervisado por el sistema operativo.</li>
                         <li>Optimizar el rendimiento del sistema al evitar interferencias entre procesos.</li>
+                    </ul>
+                    <br>
+                    <div class="Titulo"><h2 id="BCP">BCP</h2></div>
+                    <p>Un proceso es un programa en acción con sus partes activas. Es una unidad que el sistema operativo administra. Mientras un programa es estático, un proceso es dinámico.</p>
+                    <p>Los procesos pueden detenerse y reiniciarse rápidamente, alternando entre ellos en sistemas operativos multitarea, lo que da la sensación de que ocurren al mismo tiempo. Esto es posible en sistemas con múltiples procesadores o núcleos, creando una especie de <span>CPU virtual</span> para cada proceso.</p>
+                    <img src="../Pic/BCP.svg" alt="Computadora administrando procesos">
+                    <p>Un proceso se describe por:</p>
+                    <ul>
+                        <li>Número único (ID)</li>
+                        <li>Estado actual</li>
+                        <li>Prioridad</li>
+                        <li>Instrucción en curso</li>
+                        <li>Datos y memoria asociados</li>
+                        <li>Registro de CPU</li>
+                        <li>Solicitudes de entrada/salida</li>
+                        <li>Información de auditoría para rastreo</li>
+                    </ul>
+                    <br>
+                    <p>Los procesos se crean en sistemas operativos debido a cuatro eventos principales:</p>
+                    <ul>
+                        <li><span>Arranque del sistema:</span> Al iniciar el sistema, se inician procesos en segundo plano (demonios) y procesos de primer plano para interactuar con los usuarios.</li>
+                        <li><span>Llamada al sistema:</span> Un proceso puede crear nuevos procesos relacionados entre sí mediante llamadas al sistema (por ejemplo, para tareas en red).</li>
+                        <li><span>Petición de usuario:</span> Los usuarios pueden iniciar procesos a través de comandos, haciendo clic en iconos o enviando documentos para imprimir en sistemas de interfaz gráfica.</li>
+                        <li><span>Inicio de trabajo por lotes:</span> En máquinas empresariales, se generan rutinas de almacenamiento o auditoría de datos, y el sistema operativo crea procesos para ejecutar estos trabajos cuando los recursos están disponibles.</li>
+                    </ul>
+                    <br>
+                    <p>La terminación de un proceso en un sistema operativo ocurre debido a diferentes situaciones:</p>
+                    <ul>
+                        <li><span>Salida normal:</span> Cuando un proceso se cierra voluntariamente, como cuando un usuario finaliza una aplicación o sesión.</li>
+                        <li><span>Salida por error:</span> También es voluntaria y ocurre cuando un proceso se detiene debido a un error, como la referencia a un archivo inexistente al compilar un programa.</li>
+                        <li><span>Error fatal:</span> Es una detención involuntaria causada por falta de memoria, violación de límites de memoria, errores aritméticos, fallos de E/S, instrucciones no válidas o llamadas a instrucciones privilegiadas.</li>
+                        <li><span>Eliminado por otro proceso:</span> Es una terminación involuntaria que ocurre cuando otro proceso, como el proceso padre, solicita la terminación de un proceso hijo a través del Sistema Operativo.</li>
                     </ul>
                     <br>
                 </div>
