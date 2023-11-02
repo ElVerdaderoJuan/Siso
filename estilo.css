@@ -21,6 +21,8 @@ ul {
 
 footer {
     display: flex;
+    background-color: #03121f;
+    margin-top: 6vh;
     color: #95bee2;
     align-items: center;
     justify-content: center;
@@ -134,7 +136,7 @@ header p {
 }
 
 .Barra-boton-seleccionado {
-    background-color: #3c92d8;
+    background-color: #3cb4d8;
     color: #FFBBB8;
     border: none;
     padding: 2.3vh 20px;
@@ -152,7 +154,6 @@ header p {
 
 .Barra-boton:not(:last-child) {
     margin-right: 0.9vh; /* Margen entre los botones */
-    
 }
 
 
@@ -402,6 +403,7 @@ header p {
     opacity: 0.36;
     text-align: left;
     margin: 1%;
+    list-style-type: disc;
 }
 
 .NoDisponible {
@@ -416,10 +418,11 @@ header p {
     opacity: 0.3;
 }
 
-.NoDisponible li {
+.NoDisponible p {
     text-align: center;
     font-size: 150%;
     opacity: 0;
+    margin: 0;
     transition: all 0.3s;
 }
 
@@ -428,7 +431,7 @@ header p {
     box-shadow: none;
 }
 
-.NoDisponible:hover li {
+.NoDisponible:hover p {
     opacity: 0.45;
 }
 
