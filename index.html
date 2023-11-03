@@ -3,87 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segundo corte - Siso</title>
-    <link rel="icon" href="../Logo.ico">
-    <link rel="stylesheet" href="../estilo.css">
+    <title>Siso</title>
+    <link rel="icon" href="Logo.ico">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
         <div>
-            <h1>2</h1>
-            <p>Segundo Corte</p>
+            <h1>SisO</h1>
+            <p>La página de Sistemas Operativos</p>
         </div>
     </header>
 
     <div class="BarraNavegacion">
-        <a href="../index.html" class="Barra-boton boton">Inicio</a>
+        <a class="Barra-boton Barra-boton-seleccionado">Inicio</a>
         <a href="#" class="Barra-boton boton">Último tema</a>
-        <a class="Barra-boton Barra-boton-seleccionado">Clases</a>
-        <a href="../index.html#Seccion-Acerca" class="Barra-boton boton">Acerca de</a>
+        <a href="#Seccion-Clases" class="Barra-boton boton">Clases</a>
+        <a href="#Seccion-Acerca" class="Barra-boton boton">Acerca de</a>
     </div>
 
     <div class="Contenido">
         <div class="Menu Seccion Fixed">
             <ul class="Menu-Botones AutoScroll">
                 <div>Saltar a</div>
-                <li><a href="#GestionDeMemoria">Gestión de memoria <span>►</span></a></li>
-                <li><a href="#BCP">BCP <span>►</span></a></li>
-                <li><a href="#Virtualizacion">Virtualización <span>►</span></a></li>
+                <li><a href="#Bienvenido">Bienvenido <span>►</span></a></li>
+                <li><a href="#Clases">Sobre las clases <span>►</span></a></li>
+                <li><a href="#Pagina">Información de la página <span>►</span></a></li>
+                <li><a href="#Autor">Sobre el autor <span>►</span></a></li>
+                <li><a href="#Universidad">Sobre la universidad <span>►</span></a></li>
+                <li><a href="#Apoyar">Apoyar <span>►</span></a></li>
             </ul>
             
         </div>
         <div class="Contenido Seccion-Principal Seccion">
             <div class="Seccion">
                 <div>
-                    <div class="Titulo"><h2 id="GestionDeMemoria">Gestión de memoria</h2></div>
-                    <p>La gestión de memoria en una computadora se trata de administrar la memoria principal. Se asigna memoria a los programas que la necesitan y se libera la memoria no utilizada para otros programas.</p>
-                    <p>Hoy en día, las computadoras tienen mucha memoria, pero las aplicaciones necesitan más, lo que aumenta la demanda de memoria en dispositivos informáticos contínuamente</p>
-                    <img src="../Pic/Memory.svg" alt="Imagen del espacio donde va cada memoria">
-                    <p>El administrador de memoria en el sistema operativo supervisa el uso de la memoria y asigna memoria a los procesos. El sistema de gestión de memoria organiza de manera dinámica la asignación y control de la memoria.</p>
-                    <p>La memoria principal se comparte entre el sistema operativo y los procesos utilizando el concepto de multiprogramación, donde se divide en espacios para que cada proceso se ejecute de forma independiente. Se asigna un espacio fijo para el sistema operativo y el resto de la memoria se utiliza para los procesos según sea necesario.</p>
-                    <p>La gestión de memoria tiene varios objetivos:</p>
-                    <ul>
-                        <li>Dar a cada proceso su propio espacio lógico para que se ejecute de manera independiente.</li>
-                        <li>Mover procesos cuando se quedan sin memoria o cuando otro proceso tiene prioridad.</li>
-                        <li>Garantizar la protección entre procesos para evitar solapamientos.</li>
-                        <li>Salvaguardar la memoria asignada al sistema operativo.</li>
-                        <li>Habilitar el intercambio de memoria entre procesos supervisado por el sistema operativo.</li>
-                        <li>Optimizar el rendimiento del sistema al evitar interferencias entre procesos.</li>
-                    </ul>
+                    <div class="Titulo"><h2 id="Bienvenido">Bienvenido a Sistemas Operativos</h2></div>
+                    <p>En esta página se mostrará todo lo relacionado con la clase de Sistemas Operativos de la univeridad <span>UTS</span>. ¡No pierdas la oportunidad de aprender algo nuevo!.</p>
+                    <p>Puedes ver los temas de cada clase dando click en el botón <a href="#Seccion-Clases">Clases</a> o seleccionando una de las opciones del menú de ayuda.</p>
+                    <p>Si quieres ver lo último que se ha hecho en clase has click en el botón de <a href="#">Último tema</a> o selecciona la primera opción en el apartado de <span>Aprender</span> en el menú de ayuda.</p>
+                    <p>¿Quieres saber más acerca de la página?, conoce la información dando click en el botón <a href="#Seccion-Acerca">Acerca de</a> y explora sobre este proyecto.</p>
                     <br>
-                    <div class="Titulo"><h2 id="BCP">BCP</h2></div>
-                    <p>Un proceso es un programa en acción con sus partes activas. Es una unidad que el sistema operativo administra. Mientras un programa es estático, un proceso es dinámico.</p>
-                    <p>Los procesos pueden detenerse y reiniciarse rápidamente, alternando entre ellos en sistemas operativos multitarea, lo que da la sensación de que ocurren al mismo tiempo. Esto es posible en sistemas con múltiples procesadores o núcleos, creando una especie de <span>CPU virtual</span> para cada proceso.</p>
-                    <img src="../Pic/BCP.svg" alt="Computadora administrando procesos">
-                    <p>Un proceso se describe por:</p>
-                    <ul>
-                        <li>Número único (ID)</li>
-                        <li>Estado actual</li>
-                        <li>Prioridad</li>
-                        <li>Instrucción en curso</li>
-                        <li>Datos y memoria asociados</li>
-                        <li>Registro de CPU</li>
-                        <li>Solicitudes de entrada/salida</li>
-                        <li>Información de auditoría para rastreo</li>
-                    </ul>
+                    <div class="Titulo"><h2 id="Clases">Sobre las clases</h2></div>
+                    <p>Dentro de las clases encontrarás los tres cortes del semestre de la clase de Sistemas Operativos en los cuales podrás aprender sobre los temas vistos ordenadamente.</p>
+                    <p>Los temas que abarca esta clase son sumamente importantes si quieres trabajar en el campo de la informática y la administración de sistemas.</p>
+                    <p>Verás imágenes en la página de gran ayuda que te impulsaran a aprender de forma más creativa, no te lo pierdas.</p>
+                    <p>Aprende conceptos básicos de los Sistemas Operativos en el <a href="Cortes/PrimerCorte.html">Primer Corte</a>. Conoce cada aspecto básico que abarca la informática y cómo esto te puede ayudar en tus futuros proyectos.</p>
+                    <p>Conoce acerca de los procesos internos de una computadora en el <a href="Cortes/SegundoCorte.html">Segundo Corte</a>. Con esto en mente comprenderás su funcionamiento y cómo administrar dichos procesos.</p>
+                    <p>Próximamente estará disponible el <span>Tercer Corte</span>.</p>
                     <br>
-                    <p>Los procesos se crean en sistemas operativos debido a cuatro eventos principales:</p>
-                    <ul>
-                        <li><span>Arranque del sistema:</span> Al iniciar el sistema, se inician procesos en segundo plano (demonios) y procesos de primer plano para interactuar con los usuarios.</li>
-                        <li><span>Llamada al sistema:</span> Un proceso puede crear nuevos procesos relacionados entre sí mediante llamadas al sistema (por ejemplo, para tareas en red).</li>
-                        <li><span>Petición de usuario:</span> Los usuarios pueden iniciar procesos a través de comandos, haciendo clic en iconos o enviando documentos para imprimir en sistemas de interfaz gráfica.</li>
-                        <li><span>Inicio de trabajo por lotes:</span> En máquinas empresariales, se generan rutinas de almacenamiento o auditoría de datos, y el sistema operativo crea procesos para ejecutar estos trabajos cuando los recursos están disponibles.</li>
-                    </ul>
+                    <div class="Titulo"><h2 id="Pagina">Información de la página</h2></div>
+                    <p>Esta página fué creada y diseñada originalmente por el creador de <span>Siso</span>, un estudiante de la universidad, no fué hecha a partir de ningún sitio web o plantilla, pero sí tubo inspiración en otras páginas que tienen ciertas características de diseño similares.</p>
+                    <p>Se le tiene un profundo agradecimiento a la universidad de las <span>Unidades Tecnológicas de Santander</span> por las materias y profesores que nos brindan conocimiento de calidad para conocer sobre estos temas.</p>
+                    <p>Los temas de las clases vistas en esta página han sido dictadas en el aula presencial de la universidad por el profesor <span>Cesar Augusto Garcia Olaya</span>, que gracias a su dedicación en la asignatura hemos aprendido todo lo que puedes explorar aquí.</p>
+                    <p>Lee todo sobre la <a href="#">Información de la página</a></p>
                     <br>
-                    <p>La terminación de un proceso en un sistema operativo ocurre debido a diferentes situaciones:</p>
-                    <ul>
-                        <li><span>Salida normal:</span> Cuando un proceso se cierra voluntariamente, como cuando un usuario finaliza una aplicación o sesión.</li>
-                        <li><span>Salida por error:</span> También es voluntaria y ocurre cuando un proceso se detiene debido a un error, como la referencia a un archivo inexistente al compilar un programa.</li>
-                        <li><span>Error fatal:</span> Es una detención involuntaria causada por falta de memoria, violación de límites de memoria, errores aritméticos, fallos de E/S, instrucciones no válidas o llamadas a instrucciones privilegiadas.</li>
-                        <li><span>Eliminado por otro proceso:</span> Es una terminación involuntaria que ocurre cuando otro proceso, como el proceso padre, solicita la terminación de un proceso hijo a través del Sistema Operativo.</li>
-                    </ul>
+                    <div class="Titulo"><h2 id="Autor">Sobre el Autor</h2></div>
+                    <p>Mi nombre es <span>Juan</span> y soy un estudiante de la universidad <span>UTS</span>, gracias a la cuál he adquirido conocimiento para mi vida. Espero que lo que aprendas aquí también te ayude a tí y que explotes el potencial que hay dentro de tí. conoce más sobre el <a href="#">Autor</a>.</p>
                     <br>
-                    <div class="Titulo"><h2 id="Virtualizacion">Virtualización</h2></div>
+                    <div class="Titulo"><h2 id="Universidad">Sobre la universidad</h2></div>
+                    <p>Mira lo que podrías hacer en la misma universidad haciendo click en el <a href="https://www.uts.edu.co/sitio/" target="_blank">Sitio oficial</a> de las Unidades Tecnológicas de Santander.</p>
+                    <p>Encontrarás información sobre la institución y podrás ver acerca de los programas académicos disponibles.</p>
+                    <p>Para seguir o revisar las redes sociales oficiales de la universidad selecciona en el menú lateral <a href="https://www.facebook.com/UnidadesTecnologicasdeSantanderUTS" target="_blank">Facebook</a> o <a href="https://www.instagram.com/unidades_uts" target="_blank">Instagram</a>.</p>
+                    <br>
+                    <div class="Titulo"><h2 id="Apoyar">Apoyar</h2></div>
+                    <p>Si te gusta esta página y te gustaría apoyarla puedes ayudar a mejorarla haciendo click en <a href="https://github.com/ElVerdaderoJuan/Siso.github.io" target="_blank">GitHub</a>. En el sitio encontrarás todo el código utilizado para la página, se agradece de corazón a cualquier aporte que puedas ofrecer.</p>
+                    <p>Apoya a la página con un aporte voluntario en <a href="https://www.paypal.com/paypalme/MultiProductosJuan" target="_blank">Paypal</a>. Cualquier cantidad será bien recibida, <span>¡Gracias por el apoyo!</span>.</p>
                     <br>
                 </div>
             </div>
@@ -91,9 +76,9 @@
         <div class="Adicion Seccion Fixed">
             <ul class="Menu-Botones AutoScroll">
                 <div>Clases</div>
-                <li><a href="PrimerCorte.html">Primer corte</a></li>
-                <li><a class="Menu-Botones-Seleccionado">Segundo corte</a></li>
-                <li><div href="#" id="Menu-Botones-Desactivado">Tercer corte <span>Próximamente</span></div></li>
+                <li><a href="Cortes/PrimerCorte.html">Primer corte</a></li>
+                <li><a href="Cortes/SegundoCorte.html">Segundo corte</a></li>
+                <li><div id="Menu-Botones-Desactivado">Tercer corte <span>Próximamente</span></div></li>
                 <br>
                 <div>Acerca de</div>
                 <li><a href="#">Esta página</a></li>
@@ -113,12 +98,92 @@
     </div>
 
 
+
     <br>
+
+
+
+    <!-- CLASES -->
+    <div class="Contenido">
+        <div class="Contenido Seccion-Principal Seccion">
+            <div class="Cortes">
+                <h2 id="Seccion-Clases">Clases</h2>
+                <div class="Cortes-Contenido">
+                    <a href="Cortes/PrimerCorte.html" class="Barra-boton boton">
+                        <div class="Corte">
+                            <h2>1</h2>
+                            <h3>Primer corte</h3>
+                            <ul>
+                                <li>Ciclo de vida informático</li>
+                                <li>Lenguajes de alto y bajo nivel</li>
+                                <li>Línea de tiempo</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="Cortes/SegundoCorte.html" class="Barra-boton boton">
+                        <div class="Corte">
+                            <h2>2</h2>
+                            <h3>Segundo corte</h3>
+                            <ul>
+                                <li>Gestión de memoria</li>
+                                <li>Qué es un BCP</li>
+                                <li>Ejercicios de procesos</li>
+                                <li>Virtualización</li>
+                                <li>Propiedades de procesos</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a class="Barra-boton boton NoDisponible">
+                        <div class="Corte">
+                            <h2>3</h2>
+                            <h3>Tercer corte</h3>
+                            <p>Próximamente</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="Contenido">
+        <div class="Contenido Seccion-Principal Seccion">
+            <div class="Cortes">
+                <h2 id="Seccion-Acerca">Acerca de</h2>
+                <div class="Cortes-Contenido">
+                    <a class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-page.svg" alt="Icono vector de página web">
+                            <h3>Página</h3>
+                            <p>Mira toda la información de esta página visitando esta sección</p>
+                        </div>
+                    </a>
+                    <a class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-copyright.svg" alt="Icono vector de copyright">
+                            <h3>Autor</h3>
+                            <p>Obten más detalles sobre el autor de la página</p>
+                        </div>
+                    </a>
+                    <a class="Barra-boton boton">
+                        <div class="Corte">
+                            <img src="Pic/Icon-lapiz.svg" alt="Icono vector de lapiz">
+                            <h3>Clase</h3>
+                            <p>Descubre acerca de la clase de Sistemas Operativos</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
 
     <footer>
-        <div><p>Derechos de autor &copy; 2023 Siso</p></div>
+        <div><p>Derechos de autor &copy; 2023 - El verdadero Juan</p></div>
     </footer>
 </body>
 </html>
