@@ -266,6 +266,14 @@ header p {
     color: #95bee2;
 }
 
+.Seccion-Principal h3 {
+    font-weight: bold;
+    font-size: 115%;
+    color: #95bee2;
+    margin: 0;
+    margin-bottom: -1.5%;
+}
+
 .Seccion-Principal p, li {
     padding: 0;
     color: #6390b8;
@@ -278,9 +286,18 @@ header p {
     margin-top: 1%;
 }
 
-.Seccion-Principal img {
-    
+.Seccion-Principal img:not(.Img-Width) {
     margin: 6%;
+}
+
+
+
+
+
+
+.Img-Width {
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 
