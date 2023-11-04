@@ -262,6 +262,7 @@ header p {
 }
 
 .Seccion-Principal span {
+    font-size: 100%;
     font-weight: bold;
     color: #95bee2;
 }
@@ -316,6 +317,11 @@ header p {
     flex: 1;
 }
 
+
+
+
+
+
 .Fixed {
     position: -webkit-sticky;
     position: sticky;
@@ -323,6 +329,23 @@ header p {
     top: 12.5vh;
     padding: 10px;
 }
+
+.Fixed span {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.Fixed span img {
+    width: 12%;
+    margin-right: 3%;
+}
+
+
+
+
+
 
 .AutoScroll {
     overflow-y: auto;
