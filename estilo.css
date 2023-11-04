@@ -266,12 +266,17 @@ header p {
     color: #95bee2;
 }
 
-.Seccion-Principal h3 {
+.Seccion-Principal h3, span {
     font-weight: bold;
     font-size: 115%;
     color: #95bee2;
     margin: 0;
     margin-bottom: -1.5%;
+}
+
+.Seccion-Principal h3 span {
+    opacity: 0.3;
+    font-weight: normal;
 }
 
 .Seccion-Principal p, li {
@@ -280,13 +285,13 @@ header p {
 }
 
 .Seccion-Principal li {
-    color: #83bbec;
+    color: #7eaad1;
     list-style-type: disc;
     margin: 0 6%;
     margin-top: 1%;
 }
 
-.Seccion-Principal img:not(.Img-Width) {
+.Seccion-Principal img:not(.Img-Width, .Img-Bottom) {
     margin: 6%;
 }
 
